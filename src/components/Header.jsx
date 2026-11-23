@@ -4,7 +4,12 @@ import '../styles/header.css';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
 
   const active =
     location.pathname === '/' ? 'home'
@@ -32,12 +37,24 @@ export default function Header() {
         </div>
 
         {/* NAVIGATION DESKTOP */}
-        <nav className="nav-links" role="navigation" aria-label="Navigation principale">
+        <nav className={`nav-links${menuOpen ? ' open' : ''}`} role="navigation" aria-label="Navigation principale">
           <Link to="/" className={active === 'home' ? 'active' : ''}>Accueil</Link>
           <Link to="/#services">Services</Link>
           <Link to="/portfolio" className={active === 'portfolio' ? 'active' : ''}>Réalisations</Link>
           <Link to="/contact" className={active === 'contact' ? 'active' : ''}>Contact</Link>
         </nav>
+
+        {/* BURGER MOBILE */}
+        <button
+          className={`nav-toggle${menuOpen ? ' open' : ''}`}
+          aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((v) => !v)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
         {/* CTA DESKTOP */}
         <div className="header-right">

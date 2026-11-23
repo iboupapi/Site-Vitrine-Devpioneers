@@ -28,6 +28,7 @@
 }
 
 .header-container {
+  position: relative;
   max-width: 1240px;
   margin: 14px auto;
   padding: 0 24px;
@@ -150,7 +151,78 @@
 .btn-header svg { width: 15px; height: 15px; transition: transform var(--transition); }
 .btn-header:hover svg { transform: translateX(4px); }
 
+/* ===================== BURGER (desktop: masqué) ===================== */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ===================== MOBILE ===================== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+
+  .nav-links.open {
+    display: flex;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 8px;
+    right: 8px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 16px;
+    background: var(--navy-deep);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    z-index: 1999;
+  }
+
+  .nav-links.open a {
+    padding: 14px 20px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+
+  .nav-links.open a.active::after { display: none; }
+
+  .header-container {
+    margin: 10px 12px;
+    padding: 0 16px;
+    height: 60px;
+  }
+
+  .header-right .btn-header { font-size: 13.5px; padding: 10px 18px; }
+}
+
+@media (max-width: 480px) {
+  .logo-text { font-size: 15px; }
+  .logo img { width: 34px; height: 34px; }
+
+  .header-right .btn-header svg { display: none; }
 }
