@@ -335,8 +335,11 @@
             align-items: center;
         }
 
-        .expertise-visual {
+        .expertise-visual-wrap {
             position: relative;
+        }
+
+        .expertise-visual {
             border-radius: var(--radius-lg);
             overflow: hidden;
             aspect-ratio: 4/5;

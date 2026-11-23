@@ -136,8 +136,10 @@ export default function Contact() {
       <section className="expertise section">
         <div className="container">
           <div className="expertise-grid">
-            <div className="expertise-visual reveal">
-              <img src="/images/contact.jpg" alt="Nos expertises" />
+            <div className="expertise-visual-wrap reveal">
+              <div className="expertise-visual">
+                <img src="/images/contact.jpg" alt="Nos expertises" />
+              </div>
               <div className="stat-card stat-card-1">
                 <div className="stat-num">98%</div>
                 <div className="stat-label">Clients satisfaits</div>
@@ -226,7 +228,14 @@ export default function Contact() {
             <div className="reveal" style={{ transitionDelay: '0.15s' }}>
               <div className="contact-form">
                 {status && (
-                  <div className="form-message" style={{ color: status.type === 'success' ? '#22c55e' : '#ef4444' }}>
+                  <div
+                    className="form-message"
+                    style={
+                      status.type === 'success'
+                        ? undefined
+                        : { background: '#fef2f2', borderColor: '#fecaca', color: '#dc2626' }
+                    }
+                  >
                     {status.text}
                   </div>
                 )}
