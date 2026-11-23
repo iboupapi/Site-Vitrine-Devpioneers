@@ -411,11 +411,17 @@
             place-items: center;
             flex-shrink: 0;
             font-size: 20px;
-            transition: background 0.3s;
+            color: var(--indigo);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .exp-icon svg {
+            width: 22px; height: 22px;
         }
 
         .exp-item:hover .exp-icon {
             background: linear-gradient(135deg, var(--indigo), var(--cyan));
+            color: white;
         }
 
         .exp-content h3 {
@@ -485,7 +491,14 @@
             place-items: center;
             flex-shrink: 0;
             font-size: 18px;
-            transition: background 0.3s;
+            color: var(--indigo);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .contact-card:hover .cc-icon { color: white; }
+
+        .cc-icon svg {
+            width: 20px; height: 20px;
         }
 
         .cc-text { flex: 1; }

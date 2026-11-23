@@ -49,6 +49,18 @@ function Counter({ target, percent }) {
   return <h2 ref={ref}>0{percent ? '%' : ''}</h2>;
 }
 
+function Stars() {
+  return (
+    <>
+      {[...Array(5)].map((_, i) => (
+        <svg key={i} viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+      ))}
+    </>
+  );
+}
+
 export default function Home() {
   useEffect(() => {
     document.title = 'DevPioneers - Accueil';
@@ -219,7 +231,7 @@ export default function Home() {
         <div className="testimonials-grid">
 
           <div className="testimonial-card">
-            <div className="testimonial-stars">★★★★★</div>
+            <div className="testimonial-stars"><Stars /></div>
             <p>"DevPioneers a complètement transformé notre présence en ligne. Nous avons doublé nos clients en 3 mois."</p>
             <div className="testimonial-author">
               <div className="author-avatar">EK</div>
@@ -231,7 +243,7 @@ export default function Home() {
           </div>
 
           <div className="testimonial-card">
-            <div className="testimonial-stars">★★★★★</div>
+            <div className="testimonial-stars"><Stars /></div>
             <p>"Équipe professionnelle, délais respectés et résultat au-delà de nos attentes. Je recommande vivement."</p>
             <div className="testimonial-author">
               <div className="author-avatar">NG</div>
@@ -243,7 +255,7 @@ export default function Home() {
           </div>
 
           <div className="testimonial-card">
-            <div className="testimonial-stars">★★★★★</div>
+            <div className="testimonial-stars"><Stars /></div>
             <p>"Notre application mobile a reçu des retours excellents. L'UX est intuitive et le code est solide."</p>
             <div className="testimonial-author">
               <div className="author-avatar">MA</div>

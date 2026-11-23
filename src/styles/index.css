@@ -574,9 +574,9 @@ body {
 
 .testimonial-stars {
   color: #facc15;
-  font-size: 18px;
   margin-bottom: 16px;
-  letter-spacing: 2px;
+  display: flex;
+  gap: 3px;
 }
 
 .testimonial-card p {

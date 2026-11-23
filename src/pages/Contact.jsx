@@ -59,7 +59,7 @@ export default function Contact() {
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.success) {
-        setStatus({ type: 'success', text: '✅ Message envoyé avec succès !' });
+        setStatus({ type: 'success', text: 'Message envoyé avec succès !' });
         setForm({ name: '', email: '', subject: '', message: '', website: '' });
       } else {
         setStatus({ type: 'error', text: data.message || 'Une erreur est survenue. Réessayez plus tard.' });
@@ -156,21 +156,38 @@ export default function Contact() {
 
               <div className="expertise-list">
                 <div className="exp-item">
-                  <div className="exp-icon">🖥️</div>
+                  <div className="exp-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="2" y="3" width="20" height="14" rx="2" />
+                      <line x1="8" y1="21" x2="16" y2="21" />
+                      <line x1="12" y1="17" x2="12" y2="21" />
+                    </svg>
+                  </div>
                   <div className="exp-content">
                     <h3>Développement Web</h3>
                     <p>Sites vitrines, applications web et plateformes sur mesure, rapides, modernes et optimisées pour convertir vos visiteurs.</p>
                   </div>
                 </div>
                 <div className="exp-item">
-                  <div className="exp-icon">🔧</div>
+                  <div className="exp-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" />
+                      <line x1="12" y1="21" x2="12" y2="12" /><line x1="12" y1="8" x2="12" y2="3" />
+                      <line x1="20" y1="21" x2="20" y2="16" /><line x1="20" y1="12" x2="20" y2="3" />
+                      <line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="17" y1="16" x2="23" y2="16" />
+                    </svg>
+                  </div>
                   <div className="exp-content">
                     <h3>Maintenance & Évolution</h3>
                     <p>Nous assurons la sécurité, les mises à jour et l'amélioration continue de votre solution digitale.</p>
                   </div>
                 </div>
                 <div className="exp-item">
-                  <div className="exp-icon">💬</div>
+                  <div className="exp-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                    </svg>
+                  </div>
                   <div className="exp-content">
                     <h3>Support Technique</h3>
                     <p>Un accompagnement réactif et professionnel pour résoudre rapidement tous vos besoins.</p>
@@ -195,7 +212,11 @@ export default function Contact() {
 
               <div className="contact-cards">
                 <a href="tel:+221710434772" className="contact-card">
-                  <div className="cc-icon">📞</div>
+                  <div className="cc-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                    </svg>
+                  </div>
                   <div className="cc-text">
                     <div className="cc-label">+221 71 043 47 72</div>
                     <div className="cc-sub">Lun–Sam, 9h–18h</div>
@@ -205,7 +226,12 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a href="mailto:devpioneershome@gmail.com" className="contact-card">
-                  <div className="cc-icon">✉️</div>
+                  <div className="cc-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
                   <div className="cc-text">
                     <div className="cc-label">devpioneershome@gmail.com</div>
                     <div className="cc-sub">Réponse sous 24h</div>
@@ -215,7 +241,12 @@ export default function Contact() {
                   </svg>
                 </a>
                 <div className="contact-card" style={{ cursor: 'default' }}>
-                  <div className="cc-icon">🕒</div>
+                  <div className="cc-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                  </div>
                   <div className="cc-text">
                     <div className="cc-label">Lundi — Samedi</div>
                     <div className="cc-sub">9h00 – 18h00</div>
