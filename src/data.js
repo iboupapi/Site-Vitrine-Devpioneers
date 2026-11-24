@@ -18,7 +18,7 @@ export const projets = [
     description: "Site vitrine avec réservation du parcours d'aventure dans les arbres du Parc de Hann à Dakar : présentation des parcours, des événements et réservation en ligne.",
     url: "https://www.acrobranch.sn/",
     category: "web",
-    image: "/images/acro.jpg"
+    image: "/images/acro.webp"
   },
   {
     title: "DevPioneers Sénégal",

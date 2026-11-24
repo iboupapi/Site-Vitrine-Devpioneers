@@ -12,7 +12,7 @@ export default function Footer() {
           {/* BRAND */}
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/images/logo.png" alt="DevPioneers" onError={(e) => (e.currentTarget.style.display = 'none')} />
+              <img src="/images/DevPioneers_Logo_HQ.webp" alt="DevPioneers" onError={(e) => (e.currentTarget.style.display = 'none')} />
               <span>Dev<em>Pioneers</em></span>
             </Link>
             <p>Nous créons des solutions digitales modernes, élégantes et performantes pour propulser votre business.</p>
@@ -20,16 +20,16 @@ export default function Footer() {
             {/* Réseaux sociaux sous le texte brand */}
             <div className="footer-socials">
               <a href="#" aria-label="Facebook" className="social-btn" onClick={(e) => e.preventDefault()}>
-                <img src="/images/fb.png" alt="Facebook" />
+                <img src="/images/fb.webp" alt="Facebook" />
               </a>
               <a href="#" aria-label="Twitter/X" className="social-btn" onClick={(e) => e.preventDefault()}>
-                <img src="/images/twitter.png" alt="Twitter" />
+                <img src="/images/twitter.webp" alt="Twitter" />
               </a>
               <a href="#" aria-label="YouTube" className="social-btn" onClick={(e) => e.preventDefault()}>
-                <img src="/images/yt.png" alt="YouTube" />
+                <img src="/images/yt.webp" alt="YouTube" />
               </a>
               <a href="#" aria-label="Instagram" className="social-btn" onClick={(e) => e.preventDefault()}>
-                <img src="/images/ig.png" alt="Instagram" />
+                <img src="/images/ig.webp" alt="Instagram" />
               </a>
             </div>
           </div>

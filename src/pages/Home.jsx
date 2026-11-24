@@ -83,7 +83,7 @@ export default function Home() {
       <section className="clients">
         <h2>Ils nous font confiance</h2>
         <div className="clients-logos">
-          <img src="/images/client2.jpg" alt="Client 1" />
+          <img src="/images/client2.webp" alt="Client 1" />
         </div>
       </section>
 
@@ -97,7 +97,7 @@ export default function Home() {
             <a href="#services" className="btn btn-primary">En savoir plus</a>
           </div>
           <div className="qsn-image">
-            <img src="/images/team.jpg" alt="Notre équipe DevPioneers" />
+            <img src="/images/team.webp" alt="Notre équipe DevPioneers" />
           </div>
         </div>
       </section>
@@ -148,7 +148,7 @@ export default function Home() {
 
           <div className="card">
             <div className="card-img-wrap web">
-              <img src="/images/webdev_img.jpg" alt="Développement Web" onError={(e) => (e.currentTarget.style.display = 'none')} />
+              <img src="/images/webdev_img.webp" alt="Développement Web" onError={(e) => (e.currentTarget.style.display = 'none')} />
             </div>
             <div className="card-body">
               <h3>Développement Web</h3>
@@ -158,7 +158,7 @@ export default function Home() {
 
           <div className="card">
             <div className="card-img-wrap mobile">
-              <img src="/images/app_mobile.jpg" alt="Applications Mobiles" onError={(e) => (e.currentTarget.style.display = 'none')} />
+              <img src="/images/app_mobile.webp" alt="Applications Mobiles" onError={(e) => (e.currentTarget.style.display = 'none')} />
             </div>
             <div className="card-body">
               <h3>Applications Mobiles</h3>
@@ -168,7 +168,7 @@ export default function Home() {
 
           <div className="card">
             <div className="card-img-wrap ecom">
-              <img src="/images/ecomerce.jpg" alt="E-commerce" onError={(e) => (e.currentTarget.style.display = 'none')} />
+              <img src="/images/ecomerce.webp" alt="E-commerce" onError={(e) => (e.currentTarget.style.display = 'none')} />
             </div>
             <div className="card-body">
               <h3>E-commerce</h3>
@@ -178,7 +178,7 @@ export default function Home() {
 
           <div className="card">
             <div className="card-img-wrap custom">
-              <img src="/images/logiciel.jpg" alt="Logiciels sur mesure" onError={(e) => (e.currentTarget.style.display = 'none')} />
+              <img src="/images/logiciel.webp" alt="Logiciels sur mesure" onError={(e) => (e.currentTarget.style.display = 'none')} />
             </div>
             <div className="card-body">
               <h3>Logiciels sur mesure</h3>

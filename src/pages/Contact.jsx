@@ -138,7 +138,7 @@ export default function Contact() {
           <div className="expertise-grid">
             <div className="expertise-visual-wrap reveal">
               <div className="expertise-visual">
-                <img src="/images/contact.jpg" alt="Nos expertises" />
+                <img src="/images/contact.webp" alt="Nos expertises" />
               </div>
               <div className="stat-card stat-card-1">
                 <div className="stat-num">98%</div>

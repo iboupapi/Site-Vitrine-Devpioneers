@@ -150,10 +150,10 @@ export default function Portfolio() {
                 <div className="project-image">
                   <span className="project-badge">{p.badge || p.category}</span>
                   <img
-                    src={p.image || '/images/webdev_img.jpg'}
+                    src={p.image || '/images/webdev_img.webp'}
                     alt={p.title}
                     loading="lazy"
-                    onError={(e) => { e.currentTarget.src = '/images/webdev_img.jpg'; }}
+                    onError={(e) => { e.currentTarget.src = '/images/webdev_img.webp'; }}
                   />
                   <div className="project-overlay">
                     <a href={p.url} target="_blank" rel="noopener" className="overlay-btn">
