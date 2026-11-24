@@ -438,7 +438,7 @@
         }
 
         /* ===== FORM SECTION ===== */
-        .form-section { background: var(--white); }
+        .form-section { background: var(--white); padding-bottom: 72px; }
 
         .form-wrapper {
             display: grid;
@@ -501,8 +501,8 @@
             width: 20px; height: 20px;
         }
 
-        .cc-text { flex: 1; }
-        .cc-label { font-weight: 600; font-size: 14px; }
+        .cc-text { flex: 1; min-width: 0; }
+        .cc-label { font-weight: 600; font-size: 14px; overflow-wrap: anywhere; }
         .cc-sub { font-size: 13px; color: var(--muted); transition: color 0.3s; }
 
         /* The form */

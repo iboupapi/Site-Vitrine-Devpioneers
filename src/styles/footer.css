@@ -67,7 +67,7 @@
    ============================================= */
 .footer-top {
   display: grid;
-  grid-template-columns: 1.8fr 1fr 1fr 1.3fr;
+  grid-template-columns: 1.8fr 1fr 1.3fr;
   gap: 48px;
   padding-bottom: 56px;
   border-bottom: 1px solid var(--footer-border);
